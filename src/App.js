@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Barcode from './barcode.js';
+import Buttons from './buttons.js';
 
 function App() {
+
+  const [image, setImage] = useState(0);
+
+  const nextImage = () => setImage(prevImage => prevImage +1);
+  const reset = () => setImage(0);
+  const randomImage = () => {
+    setImage(Math.floor(Math.random() *63));
+  }
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div className='image'>
+        <Barcode src={image}/>
+      </div>
+      <Buttons next={nextImage} reset={reset} random={randomImage}/>
+      <h3>Barcode number: {image}</h3>
     </div>
   );
 }
