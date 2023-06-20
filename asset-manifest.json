@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/barcode-displayer/static/css/main.1a1af6cb.css",
+    "main.js": "/barcode-displayer/static/js/main.1f42aded.js",
+    "static/js/787.a24f7c00.chunk.js": "/barcode-displayer/static/js/787.a24f7c00.chunk.js",
+    "index.html": "/barcode-displayer/index.html",
+    "main.1a1af6cb.css.map": "/barcode-displayer/static/css/main.1a1af6cb.css.map",
+    "main.1f42aded.js.map": "/barcode-displayer/static/js/main.1f42aded.js.map",
+    "787.a24f7c00.chunk.js.map": "/barcode-displayer/static/js/787.a24f7c00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a1af6cb.css",
+    "static/js/main.1f42aded.js"
+  ]
+}
